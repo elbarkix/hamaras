@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+
+    <script>
+      var lang_locale = 'en';
+    </script>
+    <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <style>
+      .ac_footer {
+        position: relative;
+        top: 10px;
+        height: 0;
+        text-align: center;
+        margin-bottom: 70px;
+        color: #a12000;
+      }
+
+      .ac_footer a {
+        color: #a12000;
+      }
+
+      .ac_footer p {
+        text-align: center;
+      }
+
+      img[height='1'],
+      img[width='1'] {
+        display: none !important;
+      }
+    </style>
+
+    <style type="text/css">
+      .form-style-6 {
+        font: 95% changa, Helvetica, sans-serif;
+        max-width: 700px;
+        margin: 10px auto;
+        padding: 16px;
+      }
+
+      .form-style-6 h1 {
+        background: #43d1af;
+        padding: 20px 0;
+        font-size: 140%;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+        margin: -16px -16px 16px -16px;
+      }
+
+      .form-style-6 input[type='text'],
+      .form-style-6 input[type='date'],
+      .form-style-6 input[type='datetime'],
+      .form-style-6 input[type='email'],
+      .form-style-6 input[type='tel'],
+      .form-style-6 input[type='search'],
+      .form-style-6 input[type='time'],
+      .form-style-6 input[type='url'],
+      .form-style-6 textarea,
+      .form-style-6 select {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        outline: none;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        background: #fff;
+        margin-bottom: 4%;
+        border: 1px solid #ccc;
+        padding: 3%;
+        color: #555;
+        font: 95% changa, Helvetica, sans-serif;
+      }
+
+      .form-style-6 input[type='text']:focus,
+      .form-style-6 input[type='date']:focus,
+      .form-style-6 input[type='datetime']:focus,
+      .form-style-6 input[type='email']:focus,
+      .form-style-6 input[type='tel']:focus,
+      .form-style-6 input[type='search']:focus,
+      .form-style-6 input[type='time']:focus,
+      .form-style-6 input[type='url']:focus,
+      .form-style-6 textarea:focus,
+      .form-style-6 select:focus {
+        box-shadow: 0 0 5px #43d1af;
+        padding: 3%;
+        border: 1px solid #43d1af;
+      }
+    </style>
+    <style type="text/css">
+      .form-style-6 {
+        font: 95% changa, Helvetica, sans-serif;
+        max-width: 400px;
+        margin: 10px auto;
+        padding: 16px;
+      }
+
+      .form-style-6 h1 {
+        background: #43d1af;
+        padding: 20px 0;
+        font-size: 140%;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+        margin: -16px -16px 16px -16px;
+      }
+
+      .form-style-6 input[type='text'],
+      .form-style-6 input[type='date'],
+      .form-style-6 input[type='datetime'],
+      .form-style-6 input[type='email'],
+      .form-style-6 input[type='tel'],
+      .form-style-6 input[type='search'],
+      .form-style-6 input[type='time'],
+      .form-style-6 input[type='url'],
+      .form-style-6 textarea,
+      .form-style-6 select {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        outline: none;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        background: #fff;
+        margin-bottom: 4%;
+        border: 1px solid #ccc;
+        padding: 3%;
+        color: #555;
+        font: 95% changa, Helvetica, sans-serif;
+      }
+
+      .form-style-6 input[type='text']:focus,
+      .form-style-6 input[type='date']:focus,
+      .form-style-6 input[type='datetime']:focus,
+      .form-style-6 input[type='email']:focus,
+      .form-style-6 input[type='tel']:focus,
+      .form-style-6 input[type='search']:focus,
+      .form-style-6 input[type='time']:focus,
+      .form-style-6 input[type='url']:focus,
+      .form-style-6 textarea:focus,
+      .form-style-6 select:focus {
+        box-shadow: 0 0 5px #43d1af;
+        padding: 3%;
+        border: 1px solid #43d1af;
+      }
+
+      .form-style-6 input[type='submit'],
+      .form-style-6 input[type='button'] {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        padding: 3%;
+        background: #43d1af;
+        border-bottom: 2px solid #30c29e;
+        border-top-style: none;
+        border-right-style: none;
+        border-left-style: none;
+        color: #fff;
+      }
+
+      form button {
+        display: inline-block;
+        padding: 16px 50px;
+        background: orangered;
+        color: #fff;
+        border: 0px;
+        border-radius: 3px;
+        font-family: changa;
+        font-size: 24px;
+      }
+    </style>
+    <!--retarget-->
+    <!--retarget-->
+    <script src="js/9_10_11_12.min.js" type="text/javascript"></script>
+    <meta charset="utf-8" />
+    <meta
+      content="initial-scale=1, maximum-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--retarget-->
+    <!--retarget-->
+    <div class="block1">
+      <div class="limite">
+        <div class="paint_woman_bl1">
+          <img alt class="paint_bl1" src="img/paint_bl1.png" /><img
+            alt
+            class="woman_bl1"
+            src="img/woman_bl1.png"
+          /><img alt class="prod_bl1" src="img/product_bl1.png" />
+          <div class="printing_bl1">
+            <div class="pos_rel">
+              <p class="printing_text_bl1">الرضا مضمون</p>
+            </div>
+          </div>
+        </div>
+        <div class="text_block1">
+          <span>العلاج الباكستاني للتخلص من</span
+          ><span>الصدفية و جميع الأمرض الجلدية</span>
+        </div>
+        <p class="line_text"> علاج الصدفية والكزيمة والحكة نهائيا</p>
+        <p class="line_text2"> القضاء على الطفوح الجلدية</p>
+        <p class="text2_block1"><span> اسرع! </span> عرض لوقت محدود!</p>
+      </div>
+      <div class="purpleline">
+        <div class="limite">
+          <div class="purtext_btn_bl">
+            <p class="pur_text_bl">
+              ضع طلبك اليوم واحصل على توصيل مجاني <span> عرض حصري </span>
+            </p>
+            <a class="btn" href="#request-form"> أطلب الآن </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block2">
+      <div class="limite second-block">
+        <p class="text_bl2">
+          إذا كنت تعاني من  الصدفية فهذا هو الحل
+          <span> </span>
+        </p>
+
+        <div class="img_text_bl2">
+          <img alt class="orange_bl2" src="img/orange.png" /><img
+            alt
+            class="prod_bl2"
+            src="img/product.png"
+          /><img alt class="prod_bl2_mob" src="img/product_mob.png" />
+          <p class="text3_bl2">
+            منتجنا  الباكستاني عبارة عن تركيبة حاصلة على براءة اختراع تتعامل مع
+             الصدفية و الحكة واكزيمة و تحاربها بشكل نهائي.
+          </p>
+          <p class="text3_bl2">
+            تركيبة بزيت شجرة الشاي لها خصائص مطهرة ومضادة  للصدفية والكزيمة والحكة، بفضل المكونات الطبيعية و العضوية النشطة فإن منتجنا له فعالية قصوى و يقضي بشكل كلي على كل الأمراض الجلدية
+ 
+          </p>
+          <img src="img/ingr.jpg" style="width: 80%; height: 80%" />
+          <div
+            style="
+              background-color: #f9ce00;
+              width: 37%;
+              text-align: right;
+              margin-top: 10px;
+            "
+          >
+            <p style="color: black; padding: 6px">مميزات المنتوج</p>
+          </div>
+          <div class="dayss">
+            <p>
+              <span> التخلص التام من الصدفية والكزيمة والحكة </span>
+            </p>
+            <p>
+              <span> يساعد أيضا في علاج  الطفح الجلدي والتقرحات </span>
+            </p>
+            <p>
+              <span> يسرع من عملية إستعادة المنطقة المصابة </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block3">
+      <div class="limite">
+        <div class="prod_woman">
+          <img alt class="paint_bl3" src="img/paint_bl3.png" /><img
+            alt
+            class="woman_bl3"
+            src="img/woman_bl3_mob.png"
+          /><img alt class="prod_bl3" src="img/product.png" />
+          <div class="printing_bl3">
+            <div class="pos_rel">
+              <p class="printing_text_bl1">الرضا مضمون</p>
+            </div>
+          </div>
+        </div>
+        <p class="text_bl3"> لن تعاني من الصدفية واكزيمة  بعد اليوم</p>
+        <p class="text2_bl3">أصلي و طبيعي %100</p>
+        <p class="text2_bl3">
+          مع هذا الكريم  سوف تسترجع صحة جسمك من جديد
+        </p>
+        <p class="text2_bl3">
+           لن تشعر بالإحراج من جسمك بعد الأن
+        </p>
+        <p class="text2_bl3">
+          سوف تقضي على كل الأمراض الجلدية وتحصل على جسم جذاب
+        </p>
+        <style>
+          @keyframes circle {
+            from {
+              transform: rotate(0deg);
+            }
+
+            to {
+              transform: rotate(360deg);
+            }
+          }
+
+          @keyframes inner-circle {
+            from {
+              transform: rotate(0deg);
+            }
+
+            to {
+              transform: rotate(-360deg);
+            }
+          }
+
+          .animm {
+            position: relative;
+          }
+
+          .animm .virus {
+            position: absolute;
+            left: 13%;
+            top: 9%;
+            animation: inner-circle 5s linear infinite;
+          }
+
+          .animm .virus1 {
+            position: absolute;
+            left: 7%;
+            top: 35%;
+            animation: inner-circle 5s linear infinite;
+          }
+
+          .animm .virus2 {
+            position: absolute;
+            left: 15%;
+            top: 40%;
+            animation: inner-circle 5s linear infinite;
+          }
+
+          @media screen and (max-width: 639px) {
+            .animm .virus {
+              position: absolute;
+              top: 45%;
+              left: 40%;
+            }
+          }
+
+          @media screen and (max-width: 767px) {
+            .animm .virus {
+              position: absolute;
+              top: 65%;
+              left: 50%;
+            }
+
+            .animm .virus1 {
+              position: absolute;
+              top: 45%;
+              left: 50%;
+            }
+          }
+
+          @media screen and (max-width: 960px) {
+            .animm .virus {
+              position: absolute;
+              top: 70%;
+              left: 50%;
+            }
+
+            .animm .virus1 {
+              position: absolute;
+              top: 30%;
+              left: 50%;
+            }
+          }
+
+          .forcee {
+            color: #39004c;
+            font-size: 23px;
+            font-weight: 400;
+            text-align: center;
+          }
+        </style>
+        <div class="bef_aft2"></div>
+        <div class="animm">
+          <img src="img/leg1.png" class="leeg" />
+          <span>
+            <img src="img/virus-a1.png" class="virus" />
+          </span>
+          <span>
+            <img src="img/virus-a2.png" class="virus1" />
+          </span>
+          <span>
+            <img src="img/virus-a3.png" class="virus2" />
+          </span>
+        </div>
+        <div>
+          <p class="forcee">تقوية دفاعات الجسم ضد الفطريات</p>
+        </div>
+
+        <div class="prod_woman_mob">
+          <img alt class="paint_bl3_mob" src="img/paint_bl3.png" />
+          <img alt class="woman_bl3_mob" src="img/woman_bl3_mob.png" />
+          <img alt class="prod_bl3_mob" src="img/prod_mob_bl3.png" />
+        </div>
+      </div>
+      <div class="purpleline pr_bl3 mtgtplv">
+        <div class="limite">
+          <div class="purtext_btn_bl">
+            <p class="pur_text_bl">
+              ضع طلبك اليوم واحصل على <span> توصيل مجاني ! </span>
+            </p>
+            <a class="btn_bl3" href="#request-form"> أطلب الآن </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block4">
+      <div class="limite">
+        <p class="text_bl4">
+        يوصي الخبراء بـمنتجنا الباكستاني للحد من الأمراض الجلدية لأنه
+        </p>
+        <div class="man_woman_bl4">
+          <img alt class="man_bl4" src="img/men_bl4.png" /><img
+            alt
+            class="man_bl4_mob"
+            src="img/men_bl4_mob.png"
+          />
+        </div>
+
+        <div class="text2_bl4">
+          <p>حاصل على شهادات من طرف مختبرات  دولية مرخصة</p>
+          <p>يقضي على البكتيريا الفطرية و لا يسبب أي أثار جانبية</p>
+
+          <p>يعطي النتيجة في الأيام الأولى من الاستعمال</p>
+        </div>
+        <p class="text3_bl4"><span> اسرع! </span> عرض لوقت محدود!</p>
+        <p class="text3_bl4"><b> ضع طلبك </b><span> اليوم! </span></p>
+      </div>
+      <div class="pureline_bl4">
+        <div class="limite">
+          <p>
+			مدة العلاج :
+ تتراوح مدة العلاج من شهر ونصف إلى شهرين حسب حالة المريض، لكن يستحسن اتباع العلاج لمدة لا تقل عن شهرين مع العلم انك سوف تلاحظ النتائج من أول أسبوعين.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center">
+      <h3 style="color: #000000; padding: 25px; margin: 5px">
+        " تعليق زبنائنا عن المنتوج "
+      </h3>
+        <div class="">
+          <img alt class="prod_bl3_mob imgrev" src="img/rev1.jpg" />
+          <img alt class="prod_bl3_mob imgrev" src="img/rev2.jpg" />
+          <img alt class="prod_bl3_mob imgrev" src="img/rev3.jpg" />
+          <img alt class="prod_bl3_mob imgrev" src="img/rev4.jpg" />
+        </div>
+    </div>
+
+    <div class="block6">
+      <div class="limite">
+        <p class="text_bl6">إعتني بنفسك اليوم</p>
+        <div class="form">
+          <p class="form_price"><span> 249 درهم </span><s> 350 درهم </s></p>
+
+          <script>
+            function myFunction() {
+              var elmnt = document.getElementById('content');
+              elmnt.scrollIntoView();
+            }
+          </script>
+
+          <form class="form-style-6" id="request-form">
+            <div class="field">
+              <select
+                id="Price"
+                name="Price"
+                style="font-size: 18px;
+						-webkit-appearance: revert;
+						-moz-appearance: none;
+						-ms-appearance: none;
+						-o-appearance: none;
+						appearance: revert;"
+                required
+              >
+                <option value="249">&nbsp; أريد عبوة (249 درهم)</option>
+                <option value="375">&nbsp; أريد علبتين (375 درهم)</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <input
+                type="text"
+                name="Nane"
+                id="Nane"
+                dir="rtl"
+                placeholder=" اسمك"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <input
+                type="tel"
+                id="Phone"
+                dir="ltr"
+                name="Phone"
+                placeholder=" رقم الهاتف"
+                required
+              />
+            </div>
+
+
+            <div class="field">
+              <input
+                type="text"
+                id="City"
+                dir="rtl"
+                name="City"
+                placeholder=" المــديـنـة"
+                required
+              />
+            </div>
+
+    <input name="Address" id="Address" value="" style="display:none;" type="text" >
+    <input name="Product" id="Product" value="Sadafia" style="display:none;" type="text" >
+    <input name="DateOrder" id="DateOrder" value="26/09 - 15:50" style="display:none;" type="text" >
+
+            <button id="btn_order" class="btn-form" type="submit">أطلب الآن</button>
+          </form>
+<img style="display:none;max-height:24px;" src="img/loading.gif" />
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="google-sheet.js"></script>
+        </div>
+      </div>
+    </div>
+	
+	<script>
+	$(document).ready(function(){
+		$("#btn_order").click(function(){
+		var name_client = $("#Nane").val();
+		var phone_client = $("#Phone").val();
+		var city_client = $("#City").val();
+		if(name_client != "" && phone_client != "" && city_client != ""){
+		$(this).html('<img style="max-height:24px;" src="img/loading.gif" /> المرجو الإنتظار');
+		}
+		});
+	});
+	</script>
+
+	<script>
+	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0');
+	var hh = String(today.getHours()-1).padStart(2, '0');
+	var min = String(today.getMinutes()).padStart(2, '0');
+
+	today = dd + '/' + mm + ' - ' + hh + ':' + min;
+	
+	document.getElementById("DateOrder").value = today;
+    </script>
+    <!--
+    <script src="js/main.js"></script>
+    <script src="js/js.cookie.min.js" type="text/javascript"></script>
+    -->
+    <script>
+      /*
+        $(document).ready(function () {
+            try {
+                moment.locale('');
+                $('.day-before').text(
+                    moment().subtract(1, 'day').format('D.MM.YYYY')
+                );
+                $('.day-after').text(moment().add(1, 'day').format('D.MM.YYYY'));
+            } catch (e) {
+                console.log('moment problems!');
+            }
+        });
+        */
+    </script>
+	<style>
+	@media (max-width: 490px){
+	.imgrev {width: 100% !important;}
+	}
+	@media (max-width: 960px){
+	.mtgtplv {margin-top: 160px !important;}
+	}
+	</style>
+  </body>
+</html>
